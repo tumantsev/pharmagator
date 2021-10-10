@@ -13,5 +13,4 @@ public class PharmagatorApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(PharmagatorApplication.class, args);
 	}
-
 }

@@ -17,6 +17,5 @@ CREATE TABLE prices (
     updated_at timestamp not null default now(),
     PRIMARY KEY (pharmacy_id, medicine_id),
     FOREIGN KEY (pharmacy_id) REFERENCES pharmacies(id),
-    FOREIGN KEY (medicine_id) REFERENCES medicines(id),
-
+    FOREIGN KEY (medicine_id) REFERENCES medicines(id)
 );

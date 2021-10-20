@@ -15,5 +15,8 @@ CREATE TABLE prices (
     price decimal(10, 2) not null,
     external_id varchar(100) not null,
     updated_at timestamp not null default now(),
-    PRIMARY KEY (pharmacy_id, medicine_id)
+    PRIMARY KEY (pharmacy_id, medicine_id),
+    FOREIGN KEY (pharmacy_id) REFERENCES pharmacies(id),
+    FOREIGN KEY (medicine_id) REFERENCES medicines(id),
+
 );
